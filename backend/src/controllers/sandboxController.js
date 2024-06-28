@@ -1,6 +1,6 @@
 // Example sandboxController.js
 
-const SandboxSession = require('../models/SandboxSession'); // Example model import
+const SandboxSession = require('../models/sandboxSession'); // Example model import
 
 // Controller functions
 const startSandboxSession = async (req, res) => {
