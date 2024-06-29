@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import FeatureHighlights from './components/FeatureHighlights';
 import Footer from './components/Footer';
 import './App.css';
+import Sandbox from './components/sandbox';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <HeroSection />
       <FeatureHighlights />
+      <Sandbox />
       <Footer />
     </div>
   );

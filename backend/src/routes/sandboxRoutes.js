@@ -1,11 +1,13 @@
-// Example sandboxRoutes.js
+// src/routes/sandboxRoutes.js
 
 const express = require('express');
 const router = express.Router();
-const sandboxController = require('../controllers/sandboxController');
+const { startSandboxSession, simulateChanges } = require('../controllers/sandboxController'); // Adjust path as needed
 
-// Routes for sandbox sessions and simulations
-router.post('/start-sandbox-session', sandboxController.startSandboxSession);
-router.post('/simulate-changes', sandboxController.simulateChanges);
+// Route to start a new sandbox session
+router.post('/sandbox', startSandboxSession);
+
+// Route to simulate changes in sandbox session
+router.post('/sandbox/changes', simulateChanges);
 
 module.exports = router;
