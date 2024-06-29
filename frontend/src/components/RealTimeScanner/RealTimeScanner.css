@@ -1,0 +1,25 @@
+.real-time-scanner-container {
+    display: flex;
+  }
+  
+  .scanner-main {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 190px;
+    margin-top: 200px;
+  }
+  
+  .scanner-header {
+    margin-bottom: 20px;
+  }
+  
+  .toggle-section {
+    margin-bottom: 20px;
+  }
+  
+  .issue-list-section {
+    display: flex;
+  }
+  
+  /* Add more styling as needed */
+  

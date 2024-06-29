@@ -1,0 +1,17 @@
+.dashboard-container {
+    display: flex;
+    margin-top:100px;
+  }
+  
+  .dashboard-content {
+    margin-left: 220px; /* Width of the sidebar */
+    padding: 20px;
+    background-color: #c2c5aa; /* Pale Green */
+    color: #333d29; /* Very Dark Green */
+    min-height: 100vh;
+  }
+  
+  .dashboard-content h2 {
+    color: #582f0e; /* Dark Brown */
+  }
+  

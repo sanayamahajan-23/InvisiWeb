@@ -1,0 +1,15 @@
+.highlighting-toggle {
+    margin-bottom: 10px;
+  }
+  
+  .highlighting-toggle label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #414833; /* Dark Green */
+  }
+  
+  .highlighting-toggle input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  

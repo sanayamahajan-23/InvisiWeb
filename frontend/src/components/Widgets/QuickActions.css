@@ -1,0 +1,25 @@
+.quick-actions {
+    background-color: #b6ad90; /* Light Tan */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .quick-actions h2 {
+    color: #582f0e; /* Dark Brown */
+  }
+  
+  .quick-actions .btn {
+    margin-right: 10px;
+  }
+  
+  .quick-actions .btn-primary {
+    background-color: #7f4f24; /* Medium Brown */
+    border-color: #7f4f24; /* Medium Brown */
+  }
+  
+  .quick-actions .btn-secondary {
+    background-color: #a68a64; /* Tan */
+    border-color: #a68a64; /* Tan */
+  }
+  

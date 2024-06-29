@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #c2c5aa; /* Pale Green */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a68a64; /* Tan */
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: #582f0e; /* Dark Brown */
+    font-weight: bold;
+  }
+  
+  .fab {
+    width: 60px;
+    height: 60px;
+    background-color: #7f4f24; /* Medium Brown */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-left:1200px;
+  }
+  
+  .fab:hover {
+    background-color: #582f0e; /* Dark Brown */
+  }
+  
+  .fab:active {
+    transform: scale(0.95);
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s ease;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 60px;
+    background-color: #936639; /* Light Brown */
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  .nav-item i {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+  .nav-item span {
+    display: none;
+    font-size: 14px;
+  }
+  
+  .nav-item:hover {
+    background-color: #414833; /* Dark Green */
+  }
+  
+  .nav-item.active {
+    background-color: #a4ac86; /* Olive Green */
+  }
+  
+  .nav-items.open {
+    width: 100%;
+  }
+  
+  .nav-items.open .nav-item {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .nav-items.open .nav-item span {
+    display: inline;
+  }
+  

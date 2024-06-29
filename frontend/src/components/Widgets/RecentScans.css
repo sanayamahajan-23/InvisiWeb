@@ -1,0 +1,20 @@
+.recent-scans {
+    background-color: #b6ad90; /* Light Tan */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .recent-scans h2 {
+    color: #582f0e; /* Dark Brown */
+  }
+  
+  .recent-scans ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-scans ul li {
+    color: #414833; /* Dark Green */
+  }
+  
