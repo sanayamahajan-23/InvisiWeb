@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import '../styles/sandbox.css';
 const Sand = () => {
   const [initialScore, setInitialScore] = useState(0);
   const [changedScore, setChangedScore] = useState(0);
