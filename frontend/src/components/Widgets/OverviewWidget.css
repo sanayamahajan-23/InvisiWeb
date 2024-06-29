@@ -1,0 +1,11 @@
+.widget {
+    background-color: #b6ad90; /* Light Tan */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .widget h2 {
+    color: #582f0e; /* Dark Brown */
+  }
+  

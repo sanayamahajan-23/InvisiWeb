@@ -25,6 +25,16 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <!-- Add this line inside the <head> tag of public/index.html -->
+<!-- Add Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- In your index.html or equivalent -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-HO5B/K1aYZA9g9DqBw5MJgI8l+98ZX0hZBf0xQg1XfyrTF02cc8NJH4pNB2SCFl+tvhBwMkm3Ae3Rj7gyeKTpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Optional: Add Bootstrap JavaScript and dependencies (for dropdowns, toggles, etc.) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -34,7 +44,27 @@
       If you open it directly in the browser, you will see an empty page.
 
       You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      The build step will place the bundled scripts into the <body> tag.import React from 'react';
+import { Container } from 'react-bootstrap';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
+const Footer = () => {
+  return (
+    <footer className="Footer bg-dark text-light py-3">
+      <Container className="text-center">
+        <p>© 2024 InvisiWeb. All rights reserved.</p>
+        <div className="social-icons mt-3">
+          <a href="https://www.facebook.com"><FaFacebook className="mx-2" /></a>
+          <a href="https://www.twitter.com"><FaTwitter className="mx-2" /></a>
+          <a href="https://www.instagram.com"><FaInstagram className="mx-2" /></a>
+        </div>
+      </Container>
+    </footer>
+  );
+};
+
+export default Footer;
+
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.

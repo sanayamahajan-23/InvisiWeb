@@ -1,0 +1,22 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #a68a64; /* Tan */
+  }
+  
+  .dashboard-header .logo {
+    font-size: 1.5rem;
+    color: #582f0e; /* Dark Brown */
+  }
+  
+  .dashboard-header .navbar .profile-link {
+    color: #414833; /* Dark Green */
+    text-decoration: none;
+  }
+  
+  .dashboard-header .navbar .profile-link:hover {
+    color: #7f4f24; /* Medium Brown */
+  }
+  

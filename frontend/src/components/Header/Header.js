@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css'; // Make sure to import the CSS file for styling
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [selectedNavItem, setSelectedNavItem] = useState('');
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
   };
 
-  const handleNavItemSelect = (item) => {
+  const handleNavItemSelect = (item, path) => {
     setSelectedNavItem(item);
     setIsExpanded(false); // Collapse the navbar after selecting an item
+    navigate(path); // Navigate to the specified path
   };
 
   return (
@@ -25,25 +28,25 @@ const Header = () => {
           <NavItem
             icon="fa-tachometer-alt"
             label="Dashboard"
-            onSelect={() => handleNavItemSelect('dashboard')}
+            onSelect={() => handleNavItemSelect('dashboard', '/dashboard')}
             isSelected={selectedNavItem === 'dashboard'}
           />
           <NavItem
             icon="fa-info-circle"
             label="About Us"
-            onSelect={() => handleNavItemSelect('about')}
+            onSelect={() => handleNavItemSelect('about', '/about')}
             isSelected={selectedNavItem === 'about'}
           />
           <NavItem
             icon="fa-envelope"
             label="Contact Us"
-            onSelect={() => handleNavItemSelect('contact')}
+            onSelect={() => handleNavItemSelect('contact', '/contact')}
             isSelected={selectedNavItem === 'contact'}
           />
           <NavItem
             icon="fa-question-circle"
             label="Help & FAQ"
-            onSelect={() => handleNavItemSelect('help')}
+            onSelect={() => handleNavItemSelect('help', '/help')}
             isSelected={selectedNavItem === 'help'}
           />
         </div>

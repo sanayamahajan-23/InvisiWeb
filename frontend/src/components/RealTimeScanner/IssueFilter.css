@@ -1,0 +1,10 @@
+.issue-filter {
+    margin-right: 20px;
+  }
+  
+  .issue-filter select {
+    padding: 5px;
+    font-size: 1rem;
+    color: #414833; /* Dark Green */
+  }
+  

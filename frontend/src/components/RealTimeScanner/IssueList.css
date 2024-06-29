@@ -1,0 +1,28 @@
+.issue-list {
+    flex-grow: 1;
+  }
+  
+  .issue-list h2 {
+    color: #582f0e; /* Dark Brown */
+  }
+  
+  .issue-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .issue-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #a68a64; /* Tan */
+  }
+  
+  .issue-list .issue-title {
+    font-weight: bold;
+  }
+  
+  .issue-list .issue-severity {
+    margin-top: 5px;
+    color: #414833; /* Dark Green */
+  }
+  
