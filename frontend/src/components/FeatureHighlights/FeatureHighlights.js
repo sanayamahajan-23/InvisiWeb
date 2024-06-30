@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FeatureHighlights = () => {
   return (
@@ -54,7 +55,11 @@ const FeatureHighlights = () => {
             <div className="card h-100">
               <div className="card-body text-center">
                 <i className="fas fa-desktop fa-3x text-primary mb-3"></i>
-                <h4 className="card-title">Accessibility Sandbox</h4>
+                <h4 className="card-title" >
+                <Link to="/sandbox" style={{ textDecoration: 'none', color: 'inherit' }}>
+                      Accessibility Sandbox
+                </Link>
+                </h4>
                 <p className="card-text">Real-time testing, visual comparison, change tracking for accessibility improvements.</p>
               </div>
             </div>

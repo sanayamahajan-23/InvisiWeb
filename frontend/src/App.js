@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Ad
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard/Dashboard';
 import RealTimeScanner from './components/RealTimeScanner/RealTimeScanner';
+import Sandbox from './components/sandbox';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/real-time-scan" element={<RealTimeScanner />} />
+        <Route path="/sandbox" element={<Sandbox />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>

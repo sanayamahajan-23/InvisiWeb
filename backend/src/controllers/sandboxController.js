@@ -1,31 +1,31 @@
-// Example sandboxController.js
+// controllers/sandboxController.js
+const SandboxSession = require('../models/sandboxSession');
 
-const SandboxSession = require('../models/sandboxSession'); // Example model import
-
-// Controller functions
 const startSandboxSession = async (req, res) => {
-    try {
-        // Logic to start a sandbox session
-        // Example: create a new session in the database and return initial accessibility score
-        const initialScore = 80; // Example initial score
-        res.status(200).json({ initialScore });
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
+  try {
+    const { initialScore } = req.body;
+    const newSession = new SandboxSession({ initialScore });
+    const session = await newSession.save();
+    res.status(201).json(session);
+  } catch (err) {
+    console.error('Error creating session:', err);
+    res.status(500).json({ error: 'Server error' });
+  }
 };
 
 const simulateChanges = async (req, res) => {
-    try {
-        // Logic to simulate changes and calculate new accessibility score
-        // Example: update session in the database and return changed accessibility score
-        const changedScore = 85; // Example changed score
-        res.status(200).json({ changedScore });
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
+  try {
+    const { changedScore } = req.body;
+    const newSession = new SandboxSession({ changedScore });
+    const session = await newSession.save();
+    res.status(201).json(session);
+  } catch (err) {
+    console.error('Error creating session:', err);
+    res.status(500).json({ error: 'Server error' });
+  }
 };
 
 module.exports = {
-    startSandboxSession,
-    simulateChanges
+  startSandboxSession,
+  simulateChanges
 };

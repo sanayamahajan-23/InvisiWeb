@@ -18,6 +18,7 @@ const Sidebar = () => {
         <li><button onClick={() => navigateTo('/learning-mode')}>Learning Mode</button></li>
         <li><button onClick={() => navigateTo('/integration')}>Integration</button></li>
         <li><button onClick={() => navigateTo('/reports')}>Reports</button></li>
+        <li><button onClick={() => navigateTo('/sandbox')}>Sandbox</button></li>
         <li><button onClick={() => navigateTo('/customization')}>Customization</button></li>
         <li><button onClick={() => navigateTo('/tracker')}>Tracker</button></li>
         <li><button onClick={() => navigateTo('/community')}>Community</button></li>
